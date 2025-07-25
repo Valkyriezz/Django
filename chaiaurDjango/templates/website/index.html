@@ -1,13 +1,12 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chai Aur Django</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}" />
-  </head>
-  <body>
-    <h1>Chai Aur Django</h1>
-  </body>
-</html>
+<!-- prettier-ignore -->
+{% extends "layout.html" %} 
+# This file is part of the chaiaurDjango project. 
+{%block title %} 
+Home Page 
+{% endblock %} 
+# This file is used to render the home
+page of the website. 
+{% block content %}
+<h1>Welcome to the Home Page</h1>
+<p>This is the content of the home page.</p>
+{% endblock %}
