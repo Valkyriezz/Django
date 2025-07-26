@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'chai',
+    'tailwind',
+    'theme',
 ]
 
 MIDDLEWARE = [
@@ -49,6 +51,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+TAILWIND_APP_NAME='theme'
+INTERNAL_IPS=['127.0.0.1']
 
 ROOT_URLCONF = 'chaiaurDjango.urls'
 
@@ -123,3 +128,6 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
+
