@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'chai',
     'tailwind',
     'theme',
+    'django_browser_reload',
+    'django.contrib.sites',
 ]
 
 MIDDLEWARE = [
