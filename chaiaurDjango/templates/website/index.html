@@ -1,12 +1,20 @@
 <!-- prettier-ignore -->
 {% extends "layout.html" %} 
 # This file is part of the chaiaurDjango project. 
-{%block title %} 
-Home Page 
-{% endblock %} 
-# This file is used to render the home
-page of the website. 
+{% block title %}
+  Home Page
+{% endblock %}
+
+{# This file is used to render the home page of the website. #}
 {% block content %}
-<h1 class="bg-blue-500 text-4xl">Welcome to the Home Page</h1>
-<p>This is the content of the home page.</p>
+<div class="p-8">
+  <h1 class="bg-blue-500 text-4xl text-white text-center py-4 rounded">
+    Welcome to the Home Page
+  </h1>
+  <p
+    class="mx-auto max-w-xl text-center bg-amber-700 text-white p-4 mt-6 rounded-md"
+  >
+    This is the content of the home page.
+  </p>
+</div>
 {% endblock %}

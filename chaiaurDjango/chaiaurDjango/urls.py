@@ -23,4 +23,6 @@ urlpatterns = [
     path("About/",views.About, name="About"),
     path("Contact/",views.Contact, name="Contact"),
     path("chai/", include('chai.urls')),
+    path("__reload__/", include("django_browser_reload.urls")),
+    path("accounts/", include('django.contrib.auth.urls')),
 ]
