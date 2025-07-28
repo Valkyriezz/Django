@@ -1,19 +1,24 @@
-{% load static tailwind_tags %}
-{% load static %}
+{% load static tailwind_tags %} {% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% block title%} Default value {%endblock%}</title>
+    <title>{% block title %}Default value{% endblock %}</title>
+
+    <!-- Optional custom CSS -->
     <link rel="stylesheet" href="{% static 'style.css' %}" />
+
+    <!-- Tailwind CSS -->
     {% tailwind_css %}
   </head>
-  <body>
-    <nav>This is our navbar</nav>
-    <div class="container">
+  <body class="bg-gray-50 text-black font-serif">
+    <nav class="p-4 bg-white shadow-md">This is our navbar</nav>
+
+    <div class="container mx-auto py-8">
       {% block content %}
       <!-- Default content can go here -->
       {% endblock %}
+    </div>
   </body>
 </html>
